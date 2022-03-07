@@ -32,7 +32,7 @@
         <td><%= division.teams.collect(&:name).join(',') %></td>
 
         <td><%=division.employee_id%></td>
-        <td><%= link_to 'Edit', edit_division_path(division) , :class => "btn btn-primary"%></td>
+        <td><%= link_to 'Edit', edit_division_path(division) , :class => "btn btn-warning"%></td>
         <td><%= link_to 'Destroy', division, :class => "btn btn-danger", :confirm => 'Are you sure?', :method => :delete %></td>
 
 
