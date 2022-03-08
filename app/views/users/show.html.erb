@@ -1,5 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
+ <% if @user.pic.attached? %>
+  <p>
+    <strong>Image:</strong>
+    <%= image_tag @user.pic %>
+  </p>
+<% end %>
+
 <%= render @user %>
 
 <div>

@@ -1,16 +1,38 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HrEmployeeSys</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <link rel="stylesheet" href="../../assets/stylesheets/application.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <%# <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css"> %>
   </head>
 
   <body>
+
+
+<nav class="navbar navbar-light bg-light">
+  <ul class="p-0 d-flex" style="list-style-type: none;">
+  <% if !user_signed_in? %>
+    <li><a><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-outline-success mr-2 mt-2 " %></a></li>
+    <li><a><%= link_to "Login", new_user_session_path, class:"btn btn-outline-secondary mr-2 mt-2" %></a></li>
+  <%else%>
+    <li><a><%= button_to "Sign Out", destroy_user_session_path(@user), method: :delete , class:"btn btn-sm btn-outline-danger" %></a></li>
+  <%end%>
+   
+  </ul>
+</nav>
+
+
+   <p class="notice"><%= notice %></p>
+   <p class="alert"><%= alert %></p>
     <%= yield %>
+
+
+ </main>
+      </div>
+    </div>
+
+
   </body>
+
 </html>
