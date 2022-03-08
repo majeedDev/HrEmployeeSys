@@ -1,28 +1,28 @@
   
 <div class="container">
-<h1 class="text-center mt-5">Teams</h1>
+<h1 class="text-center mt-3" style="color:395B64;">Teams</h1>
  <a href="/" class="mt-5">&#8592; Back to Home</a>
 
 
 
 <a href="/teams/new">
-<span style="font-size: 48px; color: Dodgerblue;" class="d-block mt-3">
+<span style="font-size: 48px; color: CadetBlue;" class="d-block mt-3 mb-3">
 <i class="fas fa-plus-circle"></i>
 </span>
 </a>
 
    <table class="table table-hover">
-    <thead class="table-info">
+    <thead class="table-Info">
       <tr>
-       <th>ID</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Leader</th>
-        <th>members</th>
-        <th>Division</th>
-        <th></th>
-        <th></th>
-        <th></th>
+       <th style="background-color:6998AB; color:F5F5F5;">ID</th>
+        <th style="background-color:6998AB; color:F5F5F5;">Name</th>
+        <th style="background-color:6998AB; color:F5F5F5;">Description</th>
+        <th style="background-color:6998AB; color:F5F5F5;">Leader</th>
+        <th style="background-color:6998AB; color:F5F5F5;">members</th>
+        <th style="background-color:6998AB; color:F5F5F5;">Division</th>
+        <th style="background-color:6998AB; color:F5F5F5;"></th>
+        <th style="background-color:6998AB; color:F5F5F5;"></th>
+        <th style="background-color:6998AB; color:F5F5F5;"></th>
       </tr>
     </thead>
     <tbody>
@@ -42,7 +42,7 @@
         <td> <%=team.division.name %></td> 
          <%else%> <td></td> <%end%>
          <td class="px-0"><%= link_to "Show", team_path(team), class: "btn btn-success"  %></td>
-         <td class="px-0"> <a href="/teams/<%=team.id%>/edit" class="btn btn-warning">Edit</a></td>
+         <td class="px-0"> <a href="/teams/<%=team.id%>/edit" class="btn" style="background-color:1572A1; color:white;">Edit</a></td>
          <td class="px-0"><a href="/teams/<%=team.id%>" id="destroy" class="btn btn-danger">Delete</a></td>
       </tr>
     <% end %>

@@ -1,10 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @team %>
+ <% if @user.pic.attached?%>
+    <%= image_tag(@user.pic, size: "100x100") %>
+ <%end%> 
+
+<%= render @user %>
 
 <div>
-  <%= link_to "Edit this team", edit_team_path(@team) %> |
-  <%= link_to "Back to teams", teams_path %>
+  <%= link_to "Edit this user", edit_user_path(@user) %> |
+  <%= link_to "Back to users", users_path %>
 
-  <%= button_to "Destroy this team", @team, method: :delete %>
+  <%= button_to "Destroy this user", @user, method: :delete %>
 </div>
