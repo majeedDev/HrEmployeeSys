@@ -1,7 +1,7 @@
   
 <div class="container">
-<h1 class="text-center mt-3" style="color:395B64;">Teams</h1>
- <a href="/" class="mt-5">&#8592; Back to Home</a>
+<h1 class="text-center mt-3" style="color:395B64;"><%= t('gModles.Teams')%></h1>
+ <a href="/" class="mt-5">&#8592; <%= t('globals.buttons.back to home')%></a>
 
 
 
@@ -14,12 +14,12 @@
    <table class="table table-hover">
     <thead class="table-Info">
       <tr>
-       <th style="background-color:6998AB; color:F5F5F5;">ID</th>
-        <th style="background-color:6998AB; color:F5F5F5;">Name</th>
-        <th style="background-color:6998AB; color:F5F5F5;">Description</th>
-        <th style="background-color:6998AB; color:F5F5F5;">Leader</th>
-        <th style="background-color:6998AB; color:F5F5F5;">members</th>
-        <th style="background-color:6998AB; color:F5F5F5;">Division</th>
+       <th style="background-color:6998AB; color:F5F5F5;"> <%= t('inPages.Teams.forms.id')%> </th>
+        <th style="background-color:6998AB; color:F5F5F5;"> <%= t('inPages.Teams.forms.name')%> </th>
+        <th style="background-color:6998AB; color:F5F5F5;"> <%= t('inPages.Teams.forms.description')%> </th>
+        <th style="background-color:6998AB; color:F5F5F5;"> <%= t('inPages.Teams.forms.leader')%> </th>
+        <th style="background-color:6998AB; color:F5F5F5;"> <%= t('inPages.Teams.forms.members')%> </th>
+        <th style="background-color:6998AB; color:F5F5F5;"> <%= t('inPages.Teams.forms.division')%> </th>
         <th style="background-color:6998AB; color:F5F5F5;"></th>
         <th style="background-color:6998AB; color:F5F5F5;"></th>
         <th style="background-color:6998AB; color:F5F5F5;"></th>
@@ -41,9 +41,9 @@
          <% if !(team.division).nil? %>
         <td> <%=team.division.name %></td> 
          <%else%> <td></td> <%end%>
-         <td class="px-0"><%= link_to "Show", team_path(team), class: "btn btn-success"  %></td>
-         <td class="px-0"> <a href="/teams/<%=team.id%>/edit" class="btn" style="background-color:1572A1; color:white;">Edit</a></td>
-         <td class="px-0"><a href="/teams/<%=team.id%>" id="destroy" class="btn btn-danger">Delete</a></td>
+         <td class="px-0"><%= link_to t('inPages.Teams.buttons.show team'), team_path(team), class: "btn btn-success"  %></td>
+         <td class="px-0"> <a href="/teams/<%=team.id%>/edit" class="btn" style="background-color:1572A1; color:white;"><%= t('inPages.Teams.buttons.edit team')%></a></td>
+         <td class="px-0"><a href="/teams/<%=team.id%>" id="destroy" class="btn btn-danger"><%= t('inPages.Teams.buttons.destroy team')%></a></td>
       </tr>
     <% end %>
     </tbody>

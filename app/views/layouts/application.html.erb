@@ -11,15 +11,22 @@
 
 
 <nav class="navbar navbar-light bg-light">
-  <ul class="p-0 d-flex" style="list-style-type: none;">
-  <% if !user_signed_in? %>
-    <li><a><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-outline-success mr-2 mt-2 " %></a></li>
-    <li><a><%= link_to "Login", new_user_session_path, class:"btn btn-outline-secondary mr-2 mt-2" %></a></li>
-  <%else%>
-    <li><a><%= button_to "Sign Out", destroy_user_session_path(@user), method: :delete , class:"btn btn-sm btn-outline-danger" %></a></li>
-  <%end%>
-   
-  </ul>
+  <div class="container">
+    <ul class="p-0 d-flex" style="list-style-type: none;">
+    <% if !user_signed_in? %>
+      <li><a><%= link_to t('navbar.Sign Up'), new_user_registration_path, class: "btn btn-outline-success mr-2 mt-2 " %></a></li>
+      <li><a><%= link_to t('navbar.Sign In'), new_user_session_path, class:"btn btn-outline-secondary mr-2 mt-2" %></a></li>
+   <%else%>
+     <li><a><%= button_to t('navbar.Sign Out'), destroy_user_session_path(@user), method: :delete , class:"btn btn-sm btn-outline-danger" %></a></li>
+   <%end%>
+    </ul>
+
+    <ul class="float-right" style="list-style-type: none;">
+        <a class="dropdown-item"><%= link_to 'English', url_for(locale: :en) %></a>
+        <a class="dropdown-item"><%= link_to 'عربي', url_for(locale: :ar) %></a>
+    </ul>
+  </div>
+  
 </nav>
 
 

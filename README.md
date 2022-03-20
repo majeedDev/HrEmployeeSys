@@ -33,3 +33,7 @@ Allow Users Upload Profile Picture
 
 Simple Edit for Employees page
 ![alt](/images/Emp.png)
+
+Adding Arabic lalnguage on website
+![alt](/images/pic0.png)
+![alt](/images/pic.png)

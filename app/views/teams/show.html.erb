@@ -1,14 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
- <% if @user.pic.attached?%>
-    <%= image_tag(@user.pic, size: "100x100") %>
- <%end%> 
-
-<%= render @user %>
+<%= render @team %>
 
 <div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
+  <%= link_to t('inPages.Teams.buttons.edit team'), edit_team_path(@team) %> |
+  <%= link_to t('inPages.Teams.buttons.back to teams'), teams_path %>
+  <%= button_to t('inPages.Teams.buttons.destroy team'), @team, method: :delete %>
 </div>

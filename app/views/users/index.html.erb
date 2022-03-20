@@ -1,6 +1,6 @@
 <div class="container">
-<h1 class="text-center mt-3" style="color:395B64;">Users</h1>
- <a href="/" class="mt-5">&#8592; Back to Home</a>
+<h1 class="text-center mt-3" style="color:395B64;"><%= t('gModles.Users') %></h1>
+ <a href="/" class="mt-5">&#8592; <%= t('globals.buttons.back to home') %></a>
 
 
 
@@ -13,9 +13,9 @@
    <table class="table table-hover">
     <thead class="table-info">
       <tr>
-       <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
+       <th><%= t('inPages.Users.forms.id') %></th>
+        <th><%= t('inPages.Users.forms.name') %></th>
+        <th><%= t('inPages.Users.forms.email') %></th>
         <th></th>
         <th></th>
         <th></th>
@@ -28,9 +28,9 @@
         <td># <%=user.id%></td>
         <td><%=user.name%></td>
         <td><%=user.email%></td>
-        <td class="px-0"><%= link_to "Show", user_path(user), class: "btn btn-success" %></td>
-        <td> <a href="/users/<%=user.id%>/edit" class="btn btn-info"  >Edit</a></td>
-         <td><a href="/users/<%=user.id%>" id="destroy" class="btn btn-danger">Delete</a></td>
+        <td class="px-0"><%= link_to t('inPages.Users.buttons.show user'), user_path(user), class: "btn btn-success" %></td>
+        <td> <a href="/users/<%=user.id%>/edit" class="btn btn-info"><%= t('inPages.Users.buttons.edit user') %></a></td>
+         <td><a href="/users/<%=user.id%>" id="destroy" class="btn btn-danger"><%= t('inPages.Users.buttons.destroy user') %></a></td>
       </tr>
     <% end %>
     </tbody>
