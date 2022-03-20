@@ -38,5 +38,5 @@ Adding Arabic lalnguage on website
 ![alt](/images/pic0.png)
 ![alt](/images/pic.png)
 
-##Demo
-https://user-images.githubusercontent.com/78299760/159190302-52c4cf8d-f151-42d4-8602-f03b2f45e31a.mov
+## Demo
+https://user-images.githubusercontent.com/78299760/159191173-0ec14499-40fa-47e8-9411-2a7ba2f1cf19.mp4
