@@ -1,24 +1,39 @@
-# README
+# HR System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is built with Ruby on rails 
 
-Things you may want to cover:
+## Technologies used:
+* Ruby v3.0
 
-* Ruby version
+* Ruby on rails v7.0
 
-* System dependencies
+* Bootstrap v5
 
-* Configuration
+* Database Sqlite
 
-* Database creation
+* gems: devise 4.1
 
-* Database initialization
+----------
+Screenshots:
 
-* How to run the test suite
+Home page (before Sign in/up)
+![alt](/images/HomePage.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+Home page (After Sign in/up)
+![alt](/images/HomePageAfterReg.png)
 
-* Deployment instructions
+Show Teams
+![alt](/images/Teams.png)
 
-* ...
+Show Teams Members
+![alt](/images/ShowTeamMem.png)
+
+Allow Users Upload Profile Picture
+![alt](/images/AllowUpPic.png)
+
+Simple Edit for Employees page
+![alt](/images/Emp.png)
+
+Adding Arabic lalnguage on website
+![alt](/images/pic0.png)
+![alt](/images/pic.png)
