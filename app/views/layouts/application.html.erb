@@ -12,6 +12,9 @@
 
 <nav class="navbar navbar-light bg-light">
   <div class="container">
+    <a class="navbar-brand" href="#">
+      HR Admin Platform
+    </a>
     <ul class="p-0 d-flex" style="list-style-type: none;">
     <% if !user_signed_in? %>
       <li><a><%= link_to t('navbar.Sign Up'), new_user_registration_path, class: "btn btn-outline-success mr-2 mt-2 " %></a></li>
@@ -28,7 +31,19 @@
   </div>
   
 </nav>
-
+<div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/">Home</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/users">Users</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/employees">Employees</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/teams">Teams</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/divisions">Divisions</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/targets">Targets</a>
+                </div>
+            </div>
 
    <p class="notice"><%= notice %></p>
    <p class="alert"><%= alert %></p>
@@ -40,6 +55,7 @@
     </div>
 
 
+  
   </body>
 
 </html>
