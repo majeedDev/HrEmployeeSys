@@ -1,0 +1,117 @@
+ar:
+  Human Resources System: "الموارد البشرية"
+  activerecord:
+    models:
+      user: "المستخدم"
+      employee: "الموظف"
+      target: "الهدف"
+      division: "القسم"
+      team: "الفريق"
+  helpers:
+    submit:
+      create: "انشاء %{model}"
+      update: "تحديث %{model}"
+  gModles:
+    Users: "المستخدمين"
+    Targets: "الاهداف"
+    Employees: "الموظفين"
+    Divisions: "الأقسام"
+    Teams: "الفرق"
+    det:
+      description: "الوصف"
+      desc_content: "هنا جميع بيانات"
+  globals:
+    buttons:
+      edit: 'تعديل'
+      delete: 'حذف'
+      show: 'عرض'
+      back to home: 'العودة للصفحة الرئيسية'
+    messages:
+      error message: 'أخطاء، لم يتم حفظ التغييرات %{count}'
+  inPages:
+    Users:
+      forms:
+        id: 'المعرف'
+        name: 'الاسم'
+        email: 'البريد'
+        password: 'كلمة المرور'
+        created at: 'انشئ في'
+        picture: 'الصورة الشخصية'
+        editing user: 'تعديل المستخدم'
+        new user: 'مستخدم جديد'
+      buttons:
+        back to users: 'الرجوع للمستخدمين'
+        destroy user: 'حذف المستخدم'
+        destroy picture: 'حذف الصورة'
+        update user: 'تحديث معلومات المستخدم'
+        show user: 'عرض المستخدم'
+        edit user: 'تعديل المستخدم'
+    Teams:
+      forms:
+        id: 'المعرف'
+        name: "الاسم"
+        description: 'الوصف'
+        leader: 'القائد'
+        members: 'الأعضاء'
+        division: 'القسم'
+        editing team: 'تعديل الفريق'
+        new team: 'فريق جديد'
+      buttons:
+        back to teams: 'الرجوع للفرق'
+        destroy team: 'حذف الفريق'
+        update team: 'تحديث معلومات الفريق'
+        show team: 'عرض الفريق'
+        edit team: 'تعديل الفريق'
+    Employees:
+      forms:
+        id: 'المعرف'
+        name: "الاسم"
+        email: 'البريد'
+        job: 'الوظيفة'
+        team: 'الفريق'
+        salary: 'الراتب'
+        editing employee: 'تعديل الموظف'
+        employment status: 'الحالة الوظيفية'
+        new employee: 'موظف جديد'
+      buttons:
+        back to employees: 'الرجوع للموظفين'
+        destroy employee: 'حذف الموظف'
+        update employee: 'تحديث معلومات الموظف'
+        show employee: 'عرض الموظف'
+        edit employee: 'تعديل الموظف'
+    Divisions:
+      forms:
+        id: 'المعرف'
+        name: "الاسم"
+        description: 'الوصف'
+        teams: 'الفرق'
+        manager: 'المدير'
+        editing division: 'تعديل القسم'
+        new division: 'قسم جديد'
+      buttons:
+        back to divisions: 'الرجوع للأقسام'
+        destroy division: 'حذف القسم'
+        update division: 'تحديث معلومات القسم'
+        show division: 'عرض القسم'
+        edit division: 'تعديل القسم'
+    Targets:
+      forms:
+        id: 'المعرف'
+        title: "العنوان"
+        description: 'الوصف'
+        start date: 'تاريخ البدء'
+        finish date: 'تاريخ الانتهاء'
+        status: 'الحالة'
+        team: 'الفريق'
+        editing target: 'تعديل الهدف'
+        new target: 'هدف جديد'
+      buttons:
+        back to targets: 'الرجوع الأهداف'
+        destroy target: 'حذف الهدف'
+        update target: 'تحديث الهدف'
+        show target: 'عرض الهدف'
+        edit target: 'تعديل الهدف'
+  navbar:
+    Sign Up: 'تسجيل'
+    Sign In: 'تسجيل الدخول'
+    Sign Out: 'تسجيل الخروج'
